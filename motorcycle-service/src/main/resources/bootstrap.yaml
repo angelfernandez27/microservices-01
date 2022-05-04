@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: motorcycle-service
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:8001
+
+
+#1 guarda el nombre del microservice
+#2 guarda la uri del config-service
