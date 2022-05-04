@@ -1,0 +1,8 @@
+server:
+  port: 8761
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+
+#fetch-registry: false porque eureka así mismo no se registra, en eureka se van a registrar los microservicios
