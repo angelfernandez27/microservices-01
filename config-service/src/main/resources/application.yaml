@@ -1,0 +1,19 @@
+server:
+  port: 8001
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          default-label: config-server
+          uri: https://github.com/angelfernandez27/microservices-01
+          search-paths: config-data
+  application:
+    name: config-service
+
+#1 indicamos el puerto
+#2 el config server git
+  #(en default-label indicamos la rama en la que vamos a trabajar)
+  #uri tiene la url del repo
+  #search-paths va el nombre de la carpeta con el .yaml con la config de cada microservice
+#3 application con el nombre del servicio
